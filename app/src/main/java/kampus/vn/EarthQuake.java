@@ -17,17 +17,32 @@ public class EarthQuake {
     private long mTimeInMilliseconds;
 
     /**
+     * Url of the Earthquake
+     */
+    private String mUrl;
+
+    /**
      * Constructs a new {@link EarthQuake} object
      *
      * @param magnitude is magnitude of the earthquake
      * @param location  is the city location of the earthquake
      * @param timeInMilliseconds      is the time in milliseconds when the earthquake  happened
+     * @param url is url for view details earthquake on browser
      */
 
-    public EarthQuake(double magnitude, String location, long timeInMilliseconds) {
+    public EarthQuake(double magnitude, String location, long timeInMilliseconds, String url) {
         this.mMagnitude = magnitude;
         this.mLocation = location;
         this.mTimeInMilliseconds = timeInMilliseconds;
+        this.mUrl = url;
+    }
+
+    public String getUrl() {
+        return mUrl;
+    }
+
+    public void setUrl(String url) {
+        this.mUrl = url;
     }
 
     public double getMagnitude() {

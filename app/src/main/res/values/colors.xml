@@ -10,4 +10,12 @@
     <color name="colorBlue">#1976D2</color>
     <!--color green-->
     <color name="colorGreen">#4CAF50</color>
+
+    <!--define color for TextView-->
+    <!--This color for display location offset and date-->
+    <color name="textColorEarthquakeDetails">@android:color/darker_gray</color>
+
+    <!--This color for display location primary and time-->
+    <color name="textColorEarthquakePrimary">@android:color/black</color>
+
 </resources>

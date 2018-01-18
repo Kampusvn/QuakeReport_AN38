@@ -35,8 +35,10 @@ public class QueryUtils {
                 double mag = properties.getDouble("mag");
                 String place = properties.getString("place");
                 long time = properties.getLong("time");
+                //Extract value for key url
+                String url = properties.getString("url");
 
-                EarthQuake earthQuake = new EarthQuake(mag, place, time);
+                EarthQuake earthQuake = new EarthQuake(mag, place, time, url);
                 earthQuakes.add(earthQuake);
             }
         } catch (JSONException e) {
